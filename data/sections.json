@@ -1,0 +1,262 @@
+[
+  {
+    "chunk_id": 1,
+    "metadata": {
+      "section": "Nejood Abdulaziz Bin Eshaq CV",
+      "subsection": "Job Titles"
+    },
+    "content": "- AI Engineer\n- Business Analyst\n- Data Analyst\n- Automation"
+  },
+  {
+    "chunk_id": 2,
+    "metadata": {
+      "section": "Nejood Abdulaziz Bin Eshaq CV",
+      "subsection": "Personal Information"
+    },
+    "content": "**Location:** Saudi Arabia\n**Employment Status:** Open to work"
+  },
+  {
+    "chunk_id": 3,
+    "metadata": {
+      "section": "Nejood Abdulaziz Bin Eshaq CV",
+      "subsection": "Contact"
+    },
+    "content": "**Email:** njoodeshaq@gmail.com"
+  },
+  {
+    "chunk_id": 4,
+    "metadata": {
+      "section": "Nejood Abdulaziz Bin Eshaq CV",
+      "subsection": "Links"
+    },
+    "content": "**LinkedIn:** https://www.linkedin.com/in/njoud-abdulaziz-26a47b208/  \n**GitHub:** https://github.com/njoudae  \n**Portfolio:** https://nejood-portfolio.vercel.app/  \n---"
+  },
+  {
+    "chunk_id": 5,
+    "metadata": {
+      "section": "Personal Summary"
+    },
+    "content": "Nejood Bin Eshaq is an AI Engineer and Researcher focused on designing and building intelligent systems, automation-driven solutions, and AI-enabled digital transformation initiatives.  \nHer experience includes developing scalable AI applications, transforming complex business workflows into efficient automated processes, building data pipelines, designing agentic AI systems, and applying machine learning and large language models to real-world problems.  \nHer research interests include Machine Learning, Natural Language Processing, Arabic NLP, Large Language Models, Representation Learning, and applied AI systems.  \n---"
+  },
+  {
+    "chunk_id": 6,
+    "metadata": {
+      "section": "Work & Job Experiences",
+      "subsection": "AI & Automation Engineer"
+    },
+    "content": "**Employment Type:** Freelance\n**Period:** April 2026 – Present\n- Collaborates with clients to analyze business requirements and translate operational needs into technical solutions.\n- Designs end-to-end AI, automation, and software solutions based on business problems and workflow requirements.\n- Develops automated data processing pipelines for reporting, analysis, and decision support.\n- Applies AI and automation to reduce repetitive manual work and improve operational efficiency.\n- Works across solution stages including business understanding, requirements analysis, solution design, implementation, testing, and delivery."
+  },
+  {
+    "chunk_id": 7,
+    "metadata": {
+      "section": "Work & Job Experiences",
+      "subsection": "Artificial Intelligence Engineer"
+    },
+    "content": "**Organization:** Deanship of Electronic Services, King Khalid University\n**Period:** September 2025 – March 2026\n- Built and deployed predictive machine learning models for solar power forecasting using real-world datasets.\n- Designed data pipelines and web scraping systems for automated data collection and processing.\n- Developed Agentic AI workflows integrating Large Language Models with external tools and automated processes.\n- Contributed to AI-related digital transformation initiatives.\n- Delivered training programs related to research and digital transformation.  \n---"
+  },
+  {
+    "chunk_id": 8,
+    "metadata": {
+      "section": "Education & Academic Qualifications",
+      "subsection": "Master of Science in Computer Science – Artificial Intelligence"
+    },
+    "content": "- University: King Khalid University\n- Thesis: Sarcasm Detection in Arabic Texts\n- Honors: Second class honors\n- Research focuses on Arabic Natural Language Processing, contextual text representation, machine learning classification, and sarcasm detection."
+  },
+  {
+    "chunk_id": 9,
+    "metadata": {
+      "section": "Education & Academic Qualifications",
+      "subsection": "Bachelor of Science in Computer Science"
+    },
+    "content": "- University: King Khalid University\n- GPA: 4.95 / 5.00\n- Honors: First Class honors\n- Graduate Project: Smart Parking System built an Deep Learning model that detect if the parking empty or not  \n---"
+  },
+  {
+    "chunk_id": 10,
+    "metadata": {
+      "section": "Technical Skills",
+      "subsection": "Artificial Intelligence"
+    },
+    "content": "- Intelligent AI Systems\n- Large Language Models (LLMs)\n- Retrieval-Augmented Generation (RAG)\n- Natural Language Processing (NLP)\n- Agentic AI\n- Computer Vision\n- Optical Character Recognition (OCR)"
+  },
+  {
+    "chunk_id": 11,
+    "metadata": {
+      "section": "Technical Skills",
+      "subsection": "Automation"
+    },
+    "content": "- Workflow Automation\n- n8n\n- Power Automate"
+  },
+  {
+    "chunk_id": 12,
+    "metadata": {
+      "section": "Technical Skills",
+      "subsection": "Business Analysis"
+    },
+    "content": "- Business Requirements Analysis\n- Requirements Gathering\n- Process Analysis\n- Business-to-Technical Requirements Translation"
+  },
+  {
+    "chunk_id": 13,
+    "metadata": {
+      "section": "Technical Skills",
+      "subsection": "Data"
+    },
+    "content": "- Data Pipelines\n- Data Processing\n- Data Cleaning\n- Web Scraping\n- Feature Engineering\n- Data Analysis\n- Dashboard\n- Power BI\n- Excel"
+  },
+  {
+    "chunk_id": 14,
+    "metadata": {
+      "section": "Technical Skills",
+      "subsection": "Developer Tools"
+    },
+    "content": "- Python\n- SQL\n- FastAPI\n- Docker\n- Codex\n---"
+  },
+  {
+    "chunk_id": 15,
+    "metadata": {
+      "section": "Projects"
+    },
+    "content": "Nejood has worked on projects across AI, automation, data analytics, OCR, NLP, RAG, and Business Analysis."
+  },
+  {
+    "chunk_id": 16,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Lawyer AI Assistant (RAG-based Legal Chatbot)"
+    },
+    "content": "- Built a RAG-based legal assistant over structured Saudi law data, enabling legal Q\\A, contract analysis, and context-aware reasoning via a web chat interface."
+  },
+  {
+    "chunk_id": 17,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "RAG-Protofile"
+    },
+    "content": "- Built a bilingual RAG-based chatbot for querying professional profile information using semantic retrieval, and LLM-based generation, with end-to-end response times under 6 seconds."
+  },
+  {
+    "chunk_id": 18,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Musir"
+    },
+    "content": "- AI-powered document and identity verification system using OCR and computer vision ."
+  },
+  {
+    "chunk_id": 19,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Agentic AI Procurement Workspace"
+    },
+    "content": "- Agentic AI system for end-to-end procurement workflow automation."
+  },
+  {
+    "chunk_id": 20,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Automated Reporting Workflow"
+    },
+    "content": "- Automated Excel data processing, Power BI dashboards, reporting, and email distribution."
+  },
+  {
+    "chunk_id": 21,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Review Analysis System"
+    },
+    "content": "- LLM and NLP system for automated Google Maps review analysis and insight generation."
+  },
+  {
+    "chunk_id": 22,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Sakanha"
+    },
+    "content": "- AI-assisted real estate web platform."
+  },
+  {
+    "chunk_id": 23,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "NutriTarget AI"
+    },
+    "content": "- Healthcare AI system for natural compound and therapeutic target analysis."
+  },
+  {
+    "chunk_id": 24,
+    "metadata": {
+      "section": "Projects",
+      "subsection": "Yaqadah"
+    },
+    "content": "- Computer vision system for analyzing children's drawings and visual patterns.  \n---"
+  },
+  {
+    "chunk_id": 25,
+    "metadata": {
+      "section": "Certifications",
+      "subsection": "Professional certifications"
+    },
+    "content": "- Entry Certified Business Analysis (ECBA) - In progress\n- Oracle Certified AI Foundations Associate\n- Oracle Certified Generative AI\n- PCEP – Certified Entry-Level Python Programmer\n- International English Language Testing System (IELTS) – Overall Score: 6.0"
+  },
+  {
+    "chunk_id": 26,
+    "metadata": {
+      "section": "Certifications",
+      "subsection": "Courses"
+    },
+    "content": "- Machine Learning Specialization – Stanford University\n- Deep Learning Specialization – DeepLearning.AI\n- Certified Analytics Professional (CAP)\n- Microsoft Office Specialist (MOS)\n- SQL for Data Analysis – Udacity  \n---"
+  },
+  {
+    "chunk_id": 27,
+    "metadata": {
+      "section": "Researches",
+      "subsection": "Leveraging LLMs for Arabic Mental Health Question Answering"
+    },
+    "content": "- The work investigates the preformance of Large Language Models for Arabic mental health question answering."
+  },
+  {
+    "chunk_id": 28,
+    "metadata": {
+      "section": "Researches",
+      "subsection": "Arabic Sarcasm Detection Research"
+    },
+    "content": "- Research focused on sarcasm detection in Arabic texts using contextual language representations and machine learning classifiers.  \n---"
+  },
+  {
+    "chunk_id": 29,
+    "metadata": {
+      "section": "Volunteering"
+    },
+    "content": "- IT Helper at King Khalid University for 4 hours\n- Excel Bootcamp Supervisor at MASAR for 20 hours\n- Scientific Administration Member for at Ulom 100 hours  \n---"
+  },
+  {
+    "chunk_id": 30,
+    "metadata": {
+      "section": "Achievements Overview"
+    },
+    "content": "- 1st Place — Musir — Aseer Tabtaker Hackathon\n- 1st Place — NutriTarget AI — Healthon\n- 2nd Place — Yaqadah — La Aseer Hackathon\n- Firs-Class honor (Bachelor's degree)  \n---"
+  },
+  {
+    "chunk_id": 31,
+    "metadata": {
+      "section": "Languages",
+      "subsection": "Arabic"
+    },
+    "content": "- Native."
+  },
+  {
+    "chunk_id": 32,
+    "metadata": {
+      "section": "Languages",
+      "subsection": "English"
+    },
+    "content": "- working proficiency (IELTS overall score: 6.0)  \n---"
+  },
+  {
+    "chunk_id": 33,
+    "metadata": {
+      "section": "Interests",
+      "subsection": "Nejood's interests include:"
+    },
+    "content": "- AI Engineering\n- AI Solutions Engineering\n- Business Analysis\n- Data Analysis\n- Automation\n- Retrieval-Augmented Generation (RAG)\n- Large Language Models\n- Business Process Automation\n- Digital Transformation"
+  }
+]

@@ -1,0 +1,377 @@
+[
+  {
+    "id": "q001",
+    "query": "هل لديها مشاريع RAG؟",
+    "language": "ar",
+    "answer": "نعم. لدى نجود مشاريع قائمة على RAG، من أبرزها:\n\n- Lawyer AI Assistant: مساعد قانوني مبني على RAG يعمل على بيانات قانونية سعودية مُنظمة، يوفّر الإجابة عن الأسئلة القانونية، تحليل العقود، وقدرة على التفكير السياقي عبر واجهة دردشة ويب.  \n- RAG-Protofile: بوت ثنائي اللغة مبني على RAG للاستعلام عن المعلومات المهنية باستخدام الاسترجاع الدلالي وتوليد LLM، مع زمن استجابة إجمالي أقل من 6 ثوانٍ.\n\nكما أن استرجاع المعرفة (RAG) مذكور ضمن مهاراتها واهتماماتها في مجال الذكاء الاصطناعي.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Projects",
+        "subsection": "Lawyer AI Assistant (RAG-based Legal Chatbot)",
+        "distance": 0.37892815069566393
+      },
+      {
+        "rank": 2,
+        "section": "Projects",
+        "subsection": "RAG-Protofile",
+        "distance": 0.4308628615080439
+      },
+      {
+        "rank": 3,
+        "section": "Interests",
+        "subsection": "Nejood's interests include:",
+        "distance": 0.4347891591174918
+      },
+      {
+        "rank": 4,
+        "section": "Technical Skills",
+        "subsection": "Artificial Intelligence",
+        "distance": 0.4435366842284613
+      },
+      {
+        "rank": 5,
+        "section": "Projects",
+        "subsection": "",
+        "distance": 0.4751127897068085
+      }
+    ],
+    "retrieval_latency": 0.3037553000031039,
+    "generation_latency": 8.285500300000422,
+    "total_latency": 8.589298200007761
+  },
+  {
+    "id": "q002",
+    "query": "هل لديها خبرة في OCR؟",
+    "language": "ar",
+    "answer": "نعم. لدى نجود خبرة في OCR — عملت على مشاريع تتضمن أنظمة تحقق من الوثائق والهوية تعتمد على OCR والحوسبة البصرية (مثل مشروع Musir)، كما تُدرج OCR ضمن مهاراتها التقنية إلى جانب Computer Vision وNLP وRAG.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Projects",
+        "subsection": "Musir",
+        "distance": 0.39128102538133597
+      },
+      {
+        "rank": 2,
+        "section": "Projects",
+        "subsection": "",
+        "distance": 0.4201820741536996
+      },
+      {
+        "rank": 3,
+        "section": "Education & Academic Qualifications",
+        "subsection": "Master of Science in Computer Science – Artificial Intelligence",
+        "distance": 0.420991728040703
+      },
+      {
+        "rank": 4,
+        "section": "Technical Skills",
+        "subsection": "Artificial Intelligence",
+        "distance": 0.42555683087558366
+      },
+      {
+        "rank": 5,
+        "section": "Technical Skills",
+        "subsection": "Developer Tools",
+        "distance": 0.42599509083808046
+      }
+    ],
+    "retrieval_latency": 0.11454610001237597,
+    "generation_latency": 7.474783500001649,
+    "total_latency": 7.589418599993223
+  },
+  {
+    "id": "q003",
+    "query": "ايش المشاريع اللي اشتغلت عليها؟",
+    "language": "ar",
+    "answer": "اشتغلت على مشاريع في مجالات الذكاء الاصطناعي والأتمتة وتحليل البيانات وOCR وNLP وRAG وتحليل الأعمال. بشكل عملي، شملت أعمالي:\n\n- بناء ونشر نماذج تعلم آلي توقعية لتنبؤ إنتاج الطاقة الشمسية من بيانات حقيقية.  \n- تصميم خطوط بيانات وأنظمة جمع بيانات مؤتمتة (web scraping) ومعالجتها.  \n- تطوير سير عمل Agentic AI يدمج نماذج اللغة الكبيرة مع أدوات خارجية وعمليات مؤتمتة.  \n- المساهمة في مبادرات التحول الرقمي المتعلقة بالذكاء الاصطناعي وتقديم برامج تدريبية في البحث والتحول الرقمي.  \n\nكما شاركت متطوعة في أدوار مثل مساعد تكنولوجيا معلومات، ومشرفة Bootcamp في Excel، وعضو إدارة علمية. الأدوات التي استخدمتها تتضمن Python، SQL، FastAPI، Docker وCodex.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Volunteering",
+        "subsection": "",
+        "distance": 0.36021513762972834
+      },
+      {
+        "rank": 2,
+        "section": "Projects",
+        "subsection": "",
+        "distance": 0.36592782970753684
+      },
+      {
+        "rank": 3,
+        "section": "Work & Job Experiences",
+        "subsection": "Artificial Intelligence Engineer",
+        "distance": 0.37141991391998985
+      },
+      {
+        "rank": 4,
+        "section": "Technical Skills",
+        "subsection": "Developer Tools",
+        "distance": 0.3725855852820861
+      },
+      {
+        "rank": 5,
+        "section": "Nejood Abdulaziz Bin Eshaq CV",
+        "subsection": "Personal Inofrmation",
+        "distance": 0.3781700848216882
+      }
+    ],
+    "retrieval_latency": 0.18928710000182036,
+    "generation_latency": 9.415541599999415,
+    "total_latency": 9.604875899996841
+  },
+  {
+    "id": "q004",
+    "query": "ما هي مؤهلاتها الأكاديمية؟",
+    "language": "ar",
+    "answer": "لديها المؤهلات الأكاديمية التالية:\n\n- ماجستير في علوم الحاسب – تخصص الذكاء الاصطناعي من جامعة الملك خالد. رسالة الماجستير كانت عن \"اكتشاف السخرية في النصوص العربية\". حصلت على مرتبة الشرف الثانية، وتركيز بحثها يشمل معالجة اللغة العربية، التمثيل السياقي للنص، تصنيف التعلم الآلي، واكتشاف السخرية.  \n- بكالوريوس في علوم الحاسب من جامعة الملك خالد بمعدل 4.95/5.00 وحصلت على مرتبة الشرف الأولى. كان مشروع التخرج نظام مواقف ذكي اعتمد على نموذج تعلم عميق للكشف عن خلو الموقف.  \n- إتقان الإنجليزية على مستوى عملي (IELTS: 6.0).",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Education & Academic Qualifications",
+        "subsection": "Master of Science in Computer Science – Artificial Intelligence",
+        "distance": 0.4738588950716191
+      },
+      {
+        "rank": 2,
+        "section": "Education & Academic Qualifications",
+        "subsection": "Bachelor of Science in Computer Science",
+        "distance": 0.5088655711307463
+      },
+      {
+        "rank": 3,
+        "section": "Languages",
+        "subsection": "English",
+        "distance": 0.5300356456543988
+      },
+      {
+        "rank": 4,
+        "section": "Personal Summary",
+        "subsection": "",
+        "distance": 0.5315632925245188
+      },
+      {
+        "rank": 5,
+        "section": "Achievements Overview",
+        "subsection": "",
+        "distance": 0.5333835711864372
+      }
+    ],
+    "retrieval_latency": 0.11001019999093842,
+    "generation_latency": 7.745427200003178,
+    "total_latency": 7.855475900010788
+  },
+  {
+    "id": "q005",
+    "query": "ما هي خبرتها في الذكاء الاصطناعي؟",
+    "language": "ar",
+    "error": "GPT returned an empty response."
+  },
+  {
+    "id": "q006",
+    "query": "Does she have experience with RAG?",
+    "language": "en",
+    "answer": "Yes. Nejood has hands-on experience with Retrieval-Augmented Generation (RAG):\n\n- Built a RAG-based legal assistant over structured Saudi law data for legal Q&A, contract analysis, and context-aware reasoning via a web chat interface.  \n- Developed a bilingual RAG-based chatbot (RAG-Protofile) using semantic retrieval and LLM generation, with end-to-end responses under 6 seconds.  \n- RAG is also listed among her technical skills and interests, and her project work includes RAG-focused solutions.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Projects",
+        "subsection": "Lawyer AI Assistant (RAG-based Legal Chatbot)",
+        "distance": 0.33210223030145997
+      },
+      {
+        "rank": 2,
+        "section": "Projects",
+        "subsection": "RAG-Protofile",
+        "distance": 0.37940473714345696
+      },
+      {
+        "rank": 3,
+        "section": "Interests",
+        "subsection": "Nejood's interests include:",
+        "distance": 0.4112556879710545
+      },
+      {
+        "rank": 4,
+        "section": "Technical Skills",
+        "subsection": "Artificial Intelligence",
+        "distance": 0.42059338212394404
+      },
+      {
+        "rank": 5,
+        "section": "Projects",
+        "subsection": "",
+        "distance": 0.4548161245159647
+      }
+    ],
+    "retrieval_latency": 0.09950120000576135,
+    "generation_latency": 4.456617900010315,
+    "total_latency": 4.556151900003897
+  },
+  {
+    "id": "q007",
+    "query": "What AI projects has she worked on?",
+    "language": "en",
+    "answer": "Nejood has worked on a range of AI and automation projects, including:\n\n- Building and deploying predictive machine‑learning models for solar power forecasting.  \n- Designing data pipelines and web‑scraping systems for automated data collection and processing.  \n- Developing agentic AI workflows that integrate large language models (LLMs) with external tools and automated processes.  \n- Contributing to AI‑driven digital transformation initiatives and delivering related training.  \n- Projects spanning OCR, computer vision, NLP (including Arabic NLP), retrieval‑augmented generation (RAG), LLM applications, data analytics, automation, and business analysis.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Projects",
+        "subsection": "",
+        "distance": 0.35042568865717655
+      },
+      {
+        "rank": 2,
+        "section": "Technical Skills",
+        "subsection": "Artificial Intelligence",
+        "distance": 0.36843153798750516
+      },
+      {
+        "rank": 3,
+        "section": "Interests",
+        "subsection": "Nejood's interests include:",
+        "distance": 0.3689674895826612
+      },
+      {
+        "rank": 4,
+        "section": "Personal Summary",
+        "subsection": "",
+        "distance": 0.3819396414012359
+      },
+      {
+        "rank": 5,
+        "section": "Work & Job Experiences",
+        "subsection": "Artificial Intelligence Engineer",
+        "distance": 0.39716209558544346
+      }
+    ],
+    "retrieval_latency": 0.08014259999617934,
+    "generation_latency": 7.721093300002394,
+    "total_latency": 7.801273299992317
+  },
+  {
+    "id": "q008",
+    "query": "What is her educational background?",
+    "language": "en",
+    "answer": "Nejood holds both a bachelor’s and a master’s degree in Computer Science from King Khalid University:\n\n- Master of Science in Computer Science (Artificial Intelligence)\n  - Thesis: Sarcasm Detection in Arabic Texts\n  - Honors: Second class honors\n  - Research focus: Arabic NLP, contextual text representation, machine learning classification, and sarcasm detection\n\n- Bachelor of Science in Computer Science\n  - GPA: 4.95 / 5.00\n  - Honors: First class honors\n  - Graduate project: Smart Parking System — a deep learning model to detect whether a parking space is empty\n\nShe has also completed several relevant certifications/courses, including Stanford’s Machine Learning Specialization, the DeepLearning.AI Deep Learning Specialization, Certified Analytics Professional (CAP), Microsoft Office Specialist (MOS), and Udacity’s SQL for Data Analysis.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Education & Academic Qualifications",
+        "subsection": "Master of Science in Computer Science – Artificial Intelligence",
+        "distance": 0.43030284031685173
+      },
+      {
+        "rank": 2,
+        "section": "Education & Academic Qualifications",
+        "subsection": "Bachelor of Science in Computer Science",
+        "distance": 0.44409966249538124
+      },
+      {
+        "rank": 3,
+        "section": "Personal Summary",
+        "subsection": "",
+        "distance": 0.4479817414705765
+      },
+      {
+        "rank": 4,
+        "section": "Certifications",
+        "subsection": "Courses",
+        "distance": 0.4627153057775877
+      },
+      {
+        "rank": 5,
+        "section": "Volunteering",
+        "subsection": "",
+        "distance": 0.4706544996635681
+      }
+    ],
+    "retrieval_latency": 0.07903170000645332,
+    "generation_latency": 7.221244000000297,
+    "total_latency": 7.300348599994322
+  },
+  {
+    "id": "q009",
+    "query": "How old is she?",
+    "language": "en",
+    "answer": "The provided profile doesn’t include her age, so I can’t determine it. You can ask Nejood directly at njoodeshaq@gmail.com.",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Volunteering",
+        "subsection": "",
+        "distance": 0.45358019256068466
+      },
+      {
+        "rank": 2,
+        "section": "Languages",
+        "subsection": "English",
+        "distance": 0.46214210788207316
+      },
+      {
+        "rank": 3,
+        "section": "Personal Summary",
+        "subsection": "",
+        "distance": 0.4740332075709695
+      },
+      {
+        "rank": 4,
+        "section": "Nejood Abdulaziz Bin Eshaq CV",
+        "subsection": "Personal Inofrmation",
+        "distance": 0.47407184153298604
+      },
+      {
+        "rank": 5,
+        "section": "Technical Skills",
+        "subsection": "Developer Tools",
+        "distance": 0.4783998616808408
+      }
+    ],
+    "retrieval_latency": 0.0839780999958748,
+    "generation_latency": 4.189080599986482,
+    "total_latency": 4.273100899998099
+  },
+  {
+    "id": "q010",
+    "query": "ما هو راتبها الحالي؟",
+    "language": "ar",
+    "answer": "لا تتضمن المعلومات المتاحة في الملف أي ذكر لراتبها الحالي. لمعرفة ذلك يمكنك التواصل مباشرة مع نجو﻿د على: njoodeshaq@gmail.com. هل تود أن أساعدك في صياغة رسالة تواصل؟",
+    "sources": [
+      {
+        "rank": 1,
+        "section": "Nejood Abdulaziz Bin Eshaq CV",
+        "subsection": "Personal Inofrmation",
+        "distance": 0.4852163909442059
+      },
+      {
+        "rank": 2,
+        "section": "Nejood Abdulaziz Bin Eshaq CV",
+        "subsection": "Job Titles",
+        "distance": 0.5303997410515067
+      },
+      {
+        "rank": 3,
+        "section": "Volunteering",
+        "subsection": "",
+        "distance": 0.5324059285541273
+      },
+      {
+        "rank": 4,
+        "section": "Work & Job Experiences",
+        "subsection": "AI & Automation Engineer",
+        "distance": 0.5393221972274036
+      },
+      {
+        "rank": 5,
+        "section": "Languages",
+        "subsection": "English",
+        "distance": 0.5398809521307735
+      }
+    ],
+    "retrieval_latency": 0.08952859998680651,
+    "generation_latency": 6.997428899994702,
+    "total_latency": 7.0870017999986885
+  }
+]

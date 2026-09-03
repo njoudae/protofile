@@ -1,0 +1,52 @@
+[
+  {
+    "id": "q001",
+    "query": "هل لديها مشاريع RAG؟",
+    "language": "ar"
+  },
+  {
+    "id": "q002",
+    "query": "هل لديها خبرة في OCR؟",
+    "language": "ar"
+  },
+  {
+    "id": "q003",
+    "query": "ايش المشاريع اللي اشتغلت عليها؟",
+    "language": "ar"
+  },
+  {
+    "id": "q004",
+    "query": "ما هي مؤهلاتها الأكاديمية؟",
+    "language": "ar"
+  },
+  {
+    "id": "q005",
+    "query": "ما هي خبرتها في الذكاء الاصطناعي؟",
+    "language": "ar"
+  },
+  {
+    "id": "q006",
+    "query": "Does she have experience with RAG?",
+    "language": "en"
+  },
+  {
+    "id": "q007",
+    "query": "What AI projects has she worked on?",
+    "language": "en"
+  },
+  {
+    "id": "q008",
+    "query": "What is her educational background?",
+    "language": "en"
+  },
+  {
+    "id": "q009",
+    "query": "How old is she?",
+    "language": "en"
+  },
+  {
+    "id": "q010",
+    "query": "ما هو راتبها الحالي؟",
+    "language": "ar"
+  }
+]

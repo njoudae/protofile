@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+build/
+.vercel/
+
+# python
+.venv/
+.venv-1/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# env and secrets
+.env
+.env.*
+!.env.example
+
+# generated and local artifacts
+/tmp/
+preview-*.png
+*.tsbuildinfo
+next-env.d.ts
+.rate-limit-store.json
+
+# local vector database
+data/chroma_db/
+
+# editor / OS
+.DS_Store
+*.pem
+npm-debug.log*
+pnpm-debug.log*
+
+# caches
+coverage/
