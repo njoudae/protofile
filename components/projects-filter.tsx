@@ -115,11 +115,45 @@ export function ProjectsFilter() {
                 <div className="tag-row">
                   <span className="tag">Computer Vision</span>
                   <span className="tag">Image Analysis</span>
+                  <span className="tag">2nd Place</span>
                 </div>
               </div>
             </article>
 
-            <article className="project-case hr-case">
+            <article className="project-case smartparking-case">
+              <div className="project-media smartparking-media">
+                <div className="smartparking">
+                  <Image
+                    src="/smart.gif"
+                    alt="Smart Parking project"
+                    fill
+                    sizes="(max-width: 800px) 100vw, 58vw"
+                    unoptimized
+                  />
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>03</span>
+                  <span>Deep Learning · CNN</span>
+                </div>
+
+                <h3>Smart Parking</h3>
+
+                <p>
+                  Deep Learning system for analyzing parking space availability and optimizing parking lot utilization using CNN.
+                </p>
+
+                <div className="tag-row">
+                  <span className="tag">Computer Vision</span>
+                  <span className="tag">Image Processing</span>
+                  <span className="tag">Graduate Project</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case project-reverse hr-case">
               <div className="project-media hr-media">
                 <div className="hr-rag">
                   <Image
@@ -134,7 +168,7 @@ export function ProjectsFilter() {
 
               <div className="project-details">
                 <div className="project-kicker">
-                  <span>03</span>
+                  <span>04</span>
                   <span>RAG System · Chatbot</span>
                 </div>
 
@@ -149,6 +183,8 @@ export function ProjectsFilter() {
                 <div className="tag-row">
                   <span className="tag">RAG</span>
                   <span className="tag">Chatbot</span>
+                  <span className="tag">Natural Language Processing</span>
+                  <span className="tag">OCR</span>
                 </div>
               </div>
             </article>
@@ -261,7 +297,7 @@ export function ProjectsFilter() {
               <div className="tag-row">
                 <span className="tag">Excel</span>
                 <span className="tag">Power BI</span>
-                <span className="tag">Power Automate</span>
+                <span className="tag">Power Automation</span>
               </div>
             </div>
           </article>

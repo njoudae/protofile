@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="profile-copy">
           <p className="profile-name">{identity.name}</p>
-          <h1 id="profile-title"><strong>AI Engineer</strong> · <strong>Business & Data Analysis</strong><br /><strong>Automation</strong> · <strong>AI Researcher</strong></h1>
+          <h1 id="profile-title"><strong>AI Engineer</strong> · <strong>Business & Data Analyst</strong><br /><strong>Automation</strong> · <strong>AI Researcher</strong></h1>
           <p>{identity.summary}</p>
           <div className="availability"><span aria-hidden="true" /> Open to work <small><MapPin size={14} /> {identity.location}</small></div>
           <div className="profile-actions">
