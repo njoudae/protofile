@@ -16,7 +16,7 @@ export const identity = {
   name: "Nejood A. Bin Eshaq",
   role: "AI Engineer & Researcher",
   headline: "AI engineering, research, automation & analytics",
-  summary: "I translate complex business needs into intelligent, evaluated products—from understanding business needs and analyzing requirements to collecting data, building data pipelines and automated workflows, and developing solutions that deliver measurable value.",
+  summary: "I'm an AI Engineer focused on building end-to-end intelligent systems using RAG, OCR, LLMs, NLP, and Machine Learning, with experience integrating local LLMs for privacy-sensitive environments. My work spans the full solution lifecycle, from understanding business needs and requirements to designing, developing, and automating practical AI solutions that improve efficiency and deliver measurable value.",
   location: "Saudi Arabia",
   email: "njoodeshaq@gmail.com",
   linkedin: "https://www.linkedin.com/in/nejood-a-eshaq-26a47b208/",

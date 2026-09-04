@@ -20,7 +20,7 @@ export default function Home() {
 
       <section className="profile shell" aria-labelledby="profile-title">
         <div className="profile-logo">
-          <Image src="/n-monogram.png" alt="Nejood monogram" width={800} height={800} priority />
+          <Image src="/n-monogram.png" alt="Nejood monogram" width={500} height={500} priority />
         </div>
         <div className="profile-copy">
           <p className="profile-name">{identity.name}</p>
