@@ -11,6 +11,11 @@ type Message = {
   content: string;
 };
 
+type ChatApiResponse = {
+  answer?: string;
+  error?: string;
+};
+
 export function FloatingChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState("");
@@ -71,7 +76,9 @@ export function FloatingChatWidget() {
         }),
       });
 
-      const payload = await response.json().catch(() => ({}));
+      const payload = (await response
+        .json()
+        .catch(() => ({}))) as ChatApiResponse;
 
       if (!response.ok) {
         if (response.status === 429) {
@@ -80,7 +87,9 @@ export function FloatingChatWidget() {
           );
         } else {
           setError(
-            "Sorry, something went wrong while answering your question."
+            typeof payload.error === "string" && payload.error.trim()
+              ? payload.error
+              : "Sorry, something went wrong while answering your question."
           );
         }
 
