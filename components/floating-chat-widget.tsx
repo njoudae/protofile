@@ -2,6 +2,7 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
 
 const MAX_LENGTH = 300;
 
@@ -17,6 +18,44 @@ type ChatApiResponse = {
 };
 
 export function FloatingChatWidget() {
+  const { isArabic } = useLanguage();
+  const copy = isArabic
+    ? {
+        required: "اكتب سؤالك أولًا.",
+        tooLong: "يجب ألا يتجاوز السؤال 300 حرف.",
+        rateLimit: "تم إرسال طلبات كثيرة. انتظر قليلًا ثم حاول مرة أخرى.",
+        failed: "عذرًا، حدث خطأ أثناء الإجابة عن سؤالك.",
+        empty: "عذرًا، تعذر إنشاء إجابة الآن.",
+        unavailable: "الخدمة غير متاحة حاليًا.",
+        open: "فتح المحادثة",
+        title: "اسأل مساعد نجود",
+        label: "مساعد ملف الأعمال",
+        heading: "اسأل عن خبرات نجود",
+        close: "إغلاق المحادثة",
+        intro: "اسأل عن الذكاء الاصطناعي، أو RAG، أو البيانات، أو تحليل الأعمال، أو الخبرات.",
+        ask: "اكتب سؤالًا",
+        placeholder: "اكتب رسالتك...",
+        send: "إرسال الرسالة",
+        remaining: "حرف متبقٍ",
+      }
+    : {
+        required: "Please enter a question.",
+        tooLong: "Question must be 300 characters or less.",
+        rateLimit: "Too many requests. Please wait a moment and try again.",
+        failed: "Sorry, something went wrong while answering your question.",
+        empty: "Sorry, I could not generate an answer right now.",
+        unavailable: "The service is currently unavailable.",
+        open: "Open chat",
+        title: "Ask Nejood AI",
+        label: "Portfolio Assistant",
+        heading: "Ask about Nejood's experience",
+        close: "Close chat",
+        intro: "Ask about AI, RAG, data, business analysis, or experience.",
+        ask: "Ask a question",
+        placeholder: "Type a message...",
+        send: "Send message",
+        remaining: "characters left",
+      };
   const [isOpen, setIsOpen] = useState(false);
   const [question, setQuestion] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
@@ -29,7 +68,7 @@ export function FloatingChatWidget() {
   );
 
   const getTextDirection = (text: string): "rtl" | "ltr" => {
-    if (!text.trim()) return "ltr";
+    if (!text.trim()) return isArabic ? "rtl" : "ltr";
 
     const rtlChars = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/g;
     const match = text.match(rtlChars);
@@ -43,12 +82,12 @@ export function FloatingChatWidget() {
     const trimmed = question.trim();
 
     if (!trimmed) {
-      setError("Please enter a question.");
+      setError(copy.required);
       return;
     }
 
     if (trimmed.length > MAX_LENGTH) {
-      setError("Question must be 300 characters or less.");
+      setError(copy.tooLong);
       return;
     }
 
@@ -83,13 +122,13 @@ export function FloatingChatWidget() {
       if (!response.ok) {
         if (response.status === 429) {
           setError(
-            "Too many requests. Please wait a moment and try again."
+            copy.rateLimit
           );
         } else {
           setError(
             typeof payload.error === "string" && payload.error.trim()
               ? payload.error
-              : "Sorry, something went wrong while answering your question."
+              : copy.failed
           );
         }
 
@@ -99,7 +138,7 @@ export function FloatingChatWidget() {
       const answer =
         typeof payload.answer === "string" && payload.answer.trim()
           ? payload.answer
-          : "Sorry, I could not generate an answer right now.";
+          : copy.empty;
 
       const assistantMessage: Message = {
         id: Date.now() + 1,
@@ -109,7 +148,7 @@ export function FloatingChatWidget() {
 
       setMessages((current) => [...current, assistantMessage]);
     } catch {
-      setError("The service is currently unavailable.");
+      setError(copy.unavailable);
     } finally {
       setIsLoading(false);
     }
@@ -120,8 +159,8 @@ export function FloatingChatWidget() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="floating-chat-button"
-        aria-label="Open chat"
-        title="Ask Nejood AI"
+        aria-label={copy.open}
+        title={copy.title}
       >
         <MessageCircle size={24} />
       </button>
@@ -130,14 +169,14 @@ export function FloatingChatWidget() {
         <div className="floating-chat-widget">
           <div className="chat-widget-header">
             <div>
-              <p className="chat-widget-label">Portfolio Assistant</p>
-              <h3>Ask about Nejood&apos;s experience</h3>
+              <p className="chat-widget-label">{copy.label}</p>
+              <h3>{copy.heading}</h3>
             </div>
 
             <button
               onClick={() => setIsOpen(false)}
               className="chat-close-button"
-              aria-label="Close chat"
+              aria-label={copy.close}
             >
               <X size={20} />
             </button>
@@ -146,7 +185,7 @@ export function FloatingChatWidget() {
           <div className="chat-widget-content" aria-live="polite">
             {messages.length === 0 && (
               <div className="chat-empty-state">
-                Ask about AI, RAG, data, business analysis, or experience.
+                {copy.intro}
               </div>
             )}
 
@@ -188,14 +227,14 @@ export function FloatingChatWidget() {
           <form onSubmit={handleSubmit} className="chat-widget-form">
             <div className="chat-input-container">
               <textarea
-                aria-label="Ask a question"
+                aria-label={copy.ask}
                 value={question}
                 onChange={(event) =>
                   setQuestion(
                     event.target.value.slice(0, MAX_LENGTH)
                   )
                 }
-                placeholder="Type a message..."
+                placeholder={copy.placeholder}
                 rows={1}
                 maxLength={MAX_LENGTH}
                 disabled={isLoading}
@@ -206,14 +245,14 @@ export function FloatingChatWidget() {
                 type="submit"
                 className="chat-send-button"
                 disabled={isLoading || !question.trim()}
-                aria-label="Send message"
+                aria-label={copy.send}
               >
                 <Send size={18} />
               </button>
             </div>
 
             <div className="chat-widget-meta">
-              <span>{remaining} characters left</span>
+              <span>{remaining} {copy.remaining}</span>
             </div>
           </form>
         </div>

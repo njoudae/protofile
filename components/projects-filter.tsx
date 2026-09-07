@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight, Cloud } from "lucide-react";
 import { AnalyticsGallery } from "@/components/analytics-gallery";
+import { useLanguage } from "@/components/language-provider";
+import { projectUi } from "@/data/i18n";
 
 type Category =
   | "AI Engineering"
@@ -21,20 +23,22 @@ const categories: Category[] = [
 ];
 
 export function ProjectsFilter() {
+  const { language } = useLanguage();
+  const copy = projectUi[language];
   const [activeCategory, setActiveCategory] =
     useState<Category>("AI Engineering");
 
   return (
     <>
       <div className="project-filter">
-        {categories.map((category) => (
+        {categories.map((category, index) => (
           <button
             key={category}
             type="button"
             className={activeCategory === category ? "active" : ""}
             onClick={() => setActiveCategory(category)}
           >
-            {category}
+            {copy.categories[index]}
           </button>
         ))}
       </div>
@@ -57,7 +61,7 @@ export function ProjectsFilter() {
               <div className="project-details">
                 <div className="project-kicker">
                   <span>01</span>
-                  <span>AI · Computer Vision</span>
+                  <span>{language === "ar" ? "ذكاء اصطناعي · رؤية حاسوبية" : "AI · Computer Vision"}</span>
                 </div>
 
                 <h3>
@@ -67,15 +71,12 @@ export function ProjectsFilter() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Musir (MVP) <ArrowUpRight aria-hidden="true" />
+                    {language === "ar" ? "مسير (MVP)" : "Musir (MVP)"} <ArrowUpRight aria-hidden="true" />
                   </a>
                 </h3>
 
                 <p>
-                  A mobile document-verification system for truck drivers.
-                  Musir uses computer vision and OCR to extract document
-                  information, support identity validation, and reduce manual
-                  verification steps.
+                  {copy.musir}
                 </p>
 
                 <div className="tag-row">
@@ -106,10 +107,10 @@ export function ProjectsFilter() {
                   <span>YOLO · CV</span>
                 </div>
 
-                <h3>Yaqadah</h3>
+                <h3>{language === "ar" ? "يقظة" : "Yaqadah"}</h3>
 
                 <p>
-                  Computer vision system for analyzing children&apos;s drawings and detecting emotions such as happiness, sadness, and anger using YOLO.
+                  {copy.yaqadha}
                 </p>
 
                 <div className="tag-row">
@@ -139,10 +140,10 @@ export function ProjectsFilter() {
                   <span>Deep Learning · CNN</span>
                 </div>
 
-                <h3>Smart Parking</h3>
+                <h3>{language === "ar" ? "المواقف الذكية" : "Smart Parking"}</h3>
 
                 <p>
-                  Deep Learning system for analyzing parking space availability and optimizing parking lot utilization using CNN.
+                  {copy.smartParking}
                 </p>
 
                 <div className="tag-row">
@@ -170,15 +171,13 @@ export function ProjectsFilter() {
               <div className="project-details">
                 <div className="project-kicker">
                   <span>04</span>
-                  <span>RAG System · Chatbot</span>
+                  <span>{language === "ar" ? "نظام RAG · مساعد محادثة" : "RAG System · Chatbot"}</span>
                 </div>
 
-                <h3>HR Assistant</h3>
+                <h3>{language === "ar" ? "مساعد الموارد البشرية" : "HR Assistant"}</h3>
 
                 <p>
-                  A RAG-based HR assistant that retrieves context-grounded
-                  answers from Saudi labor regulations and analyzes employment
-                  contracts across multiple file formats using OCR and LLMs.
+                  {copy.hr}
                 </p>
 
                 <div className="tag-row">
@@ -207,15 +206,13 @@ export function ProjectsFilter() {
               <div className="project-details">
                 <div className="project-kicker">
                   <span>05</span>
-                  <span>RAG · Portfolio Assistant</span>
+                  <span>{language === "ar" ? "RAG · مساعد ملف الأعمال" : "RAG · Portfolio Assistant"}</span>
                 </div>
 
-                <h3>Portfolio RAG Assistant</h3>
+                <h3>{language === "ar" ? "مساعد ملف الأعمال بتقنية RAG" : "Portfolio RAG Assistant"}</h3>
 
                 <p>
-                  A bilingual Arabic-English RAG assistant that answers
-                  questions about my professional profile using multilingual
-                  embeddings, vector retrieval, and grounded LLM generation.
+                  {copy.portfolio}
                 </p>
 
                 <div className="tag-row">
@@ -236,16 +233,12 @@ export function ProjectsFilter() {
             <div className="project-details">
               <div className="project-kicker">
                 <span>01</span>
-                <span>Data · Dashboards</span>
+                <span>{language === "ar" ? "بيانات · لوحات معلومات" : "Data · Dashboards"}</span>
               </div>
 
-              <h3>Analytics Portfolio</h3>
+              <h3>{copy.analyticsTitle}</h3>
 
-              <p>
-                A data analytics portfolio covering data collection, cleaning,
-                transformation, analysis, KPI definition, dashboard development,
-                and decision-ready reporting.
-              </p>
+              <p>{copy.analytics}</p>
 
               <div className="tag-row">
                 <span className="tag">Data Analysis</span>
@@ -259,7 +252,7 @@ export function ProjectsFilter() {
         )}
 
         {activeCategory === "Business Analysis" && (
-          <KitchenProject />
+          <KitchenProject language={language} />
         )}
 
         {activeCategory === "Automation" && (
@@ -280,7 +273,7 @@ export function ProjectsFilter() {
                     />
                   </span>
                   <strong>Power Automate</strong>
-                  <small>Runs the automated workflow on schedule.</small>
+                  <small>{copy.automationSteps[0]}</small>
                 </div>
 
                 <div className="automation-step excel-step">
@@ -293,7 +286,7 @@ export function ProjectsFilter() {
                     />
                   </span>
                   <strong>Excel Sheets</strong>
-                  <small>Extracts and processes data from multiple files.</small>
+                  <small>{copy.automationSteps[1]}</small>
                 </div>
 
                 <div className="automation-step dashboard-step">
@@ -305,8 +298,8 @@ export function ProjectsFilter() {
                       height={96}
                     />
                   </span>
-                  <strong>Generate Dashboard</strong>
-                  <small>Creates the dashboard and structured report.</small>
+                  <strong>{language === "ar" ? "إنشاء لوحة المعلومات" : "Generate Dashboard"}</strong>
+                  <small>{copy.automationSteps[2]}</small>
                 </div>
 
                 <div className="automation-step onedrive-step">
@@ -314,7 +307,7 @@ export function ProjectsFilter() {
                     <Cloud aria-hidden="true" />
                   </span>
                   <strong>OneDrive</strong>
-                  <small>Saves the generated reports automatically.</small>
+                  <small>{copy.automationSteps[3]}</small>
                 </div>
               </div>
             </div>
@@ -322,15 +315,12 @@ export function ProjectsFilter() {
             <div className="project-details">
               <div className="project-kicker">
                 <span>01</span>
-                <span>Automation · Reporting</span>
+                <span>{language === "ar" ? "أتمتة · تقارير" : "Automation · Reporting"}</span>
               </div>
 
-              <h3>Excel to Dashboard Automation</h3>
+              <h3>{copy.automationTitle}</h3>
 
-              <p>
-                An end-to-end reporting workflow that consolidates Excel data,
-                generates dashboards, and automatically distributes reports.
-              </p>
+              <p>{copy.automation}</p>
 
               <div className="tag-row">
                 <span className="tag">Excel</span>
@@ -351,6 +341,7 @@ export function ProjectsFilter() {
                     alt="Sakanha homepage"
                     fill
                     sizes="(max-width: 800px) 100vw, 58vw"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -358,7 +349,7 @@ export function ProjectsFilter() {
               <div className="project-details">
                 <div className="project-kicker">
                   <span>01</span>
-                  <span>Development · Product</span>
+                  <span>{language === "ar" ? "تطوير · منتج" : "Development · Product"}</span>
                 </div>
 
                 <h3>
@@ -368,15 +359,11 @@ export function ProjectsFilter() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Sakanha <ArrowUpRight aria-hidden="true" />
+                    {language === "ar" ? "سكنها" : "Sakanha"} <ArrowUpRight aria-hidden="true" />
                   </a>
                 </h3>
 
-                <p>
-                  A real-estate web platform developed through an AI-assisted
-                  workflow, translating a product concept into a working digital
-                  experience.
-                </p>
+                <p>{copy.sakanha}</p>
 
                 <div className="tag-row">
                   <span className="tag">Web Platform</span>
@@ -386,7 +373,7 @@ export function ProjectsFilter() {
               </div>
             </article>
 
-            <KitchenProject />
+            <KitchenProject language={language} />
           </>
         )}
 
@@ -395,7 +382,9 @@ export function ProjectsFilter() {
   );
 }
 
-function KitchenProject() {
+function KitchenProject({ language }: { language: "en" | "ar" }) {
+  const copy = projectUi[language];
+
   return (
     <article className="project-case project-reverse kitchen-case">
       <div className="project-media kitchen-media">
@@ -413,22 +402,17 @@ function KitchenProject() {
       <div className="project-details">
         <div className="project-kicker">
           <span>01</span>
-          <span>Business Analysis · Mobile Application</span>
+          <span>{language === "ar" ? "تحليل أعمال · تطبيق جوال" : "Business Analysis · Mobile Application"}</span>
         </div>
 
-        <h3>Kitchen Production Management</h3>
+        <h3>{copy.kitchenTitle}</h3>
 
-        <p>
-          A production management system designed to digitize kitchen
-          operations, streamline order and production workflows, and coordinate
-          activities across production managers, drivers, supervisors, and
-          administrators.
-        </p>
+        <p>{copy.kitchen}</p>
 
         <p className="project-progress">
-          <s>Business Analysis</s> → <s>Requirements Analysis</s> →{" "}
-          <s>Use Cases & Workflow Design</s> →{" "}
-          <s>UI/UX Design (Figma)</s> → Development
+          <s>{copy.kitchenProgress[0]}</s> → <s>{copy.kitchenProgress[1]}</s> →{" "}
+          <s>{copy.kitchenProgress[2]}</s> →{" "}
+          <s>{copy.kitchenProgress[3]}</s> → {copy.kitchenProgress[4]}
         </p>
 
         <div className="tag-row">
