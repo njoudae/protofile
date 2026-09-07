@@ -6,14 +6,17 @@ import { AchievementsGallery } from "@/components/achievements-gallery";
 import { FloatingChatWidget } from "@/components/floating-chat-widget";
 import { ProjectsFilter } from "@/components/projects-filter";
 import { useLanguage } from "@/components/language-provider";
-import { homeCopy } from "@/data/i18n";
+import { arabicSkillCategories, homeCopy } from "@/data/i18n";
 import { identity, technologyGroups } from "@/data/portfolio";
 
 
 export default function Home() {
-  const { language, toggleLanguage } = useLanguage();
+  const { language, isArabic, toggleLanguage } = useLanguage();
   const copy = homeCopy[language];
-  const skillGroups = technologyGroups;
+  const skillGroups = technologyGroups.map((group, index) => ({
+    ...group,
+    label: isArabic ? arabicSkillCategories[index] : group.label,
+  }));
 
   return (
     <main>

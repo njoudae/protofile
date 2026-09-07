@@ -82,12 +82,21 @@ export const homeCopy = {
         "قدمت برامج تدريبية في البحث والتحول الرقمي.",
       ],
     },
-    skills: "Skills",
+    skills: "المهارات",
     achievements: "الإنجازات",
     projects: "المشاريع",
     footer: "هندسة الذكاء الاصطناعي · تحليل الأعمال والبيانات · الأتمتة · أبحاث الذكاء الاصطناعي",
   },
 } as const;
+
+export const arabicSkillCategories = [
+  "هندسة الذكاء الاصطناعي",
+  "التطوير",
+  "الأتمتة",
+  "البيانات",
+  "البحث",
+  "تحليل الأعمال",
+] as const;
 
 export const achievementUi = {
   en: {
