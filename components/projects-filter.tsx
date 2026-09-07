@@ -109,7 +109,7 @@ export function ProjectsFilter() {
                 <h3>Yaqadah</h3>
 
                 <p>
-                  Computer vision system for analyzing children's drawings and detecting emotions such as happiness, sadness, and anger using YOLO.
+                  Computer vision system for analyzing children&apos;s drawings and detecting emotions such as happiness, sadness, and anger using YOLO.
                 </p>
 
                 <div className="tag-row">
@@ -155,15 +155,16 @@ export function ProjectsFilter() {
 
             <article className="project-case project-reverse hr-case">
               <div className="project-media hr-media">
-                <div className="hr-rag">
-                  <Image
-                    src="/hr-page.png"
-                    alt="HR Assistant"
-                    fill
-                    sizes="(max-width: 800px) 100vw, 58vw"
-                    unoptimized
-                  />
-                </div>
+                <video
+                  className="project-demo-video"
+                  src="/hr-assistant-demo.mp4"
+                  controls
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="HR Assistant project demonstration"
+                />
               </div>
 
               <div className="project-details">
@@ -175,9 +176,9 @@ export function ProjectsFilter() {
                 <h3>HR Assistant</h3>
 
                 <p>
-                  A RAG-based HR assistant designed to retrieve relevant
-                  information and provide context-grounded responses through a
-                  conversational interface.
+                  A RAG-based HR assistant that retrieves context-grounded
+                  answers from Saudi labor regulations and analyzes employment
+                  contracts across multiple file formats using OCR and LLMs.
                 </p>
 
                 <div className="tag-row">
@@ -185,6 +186,43 @@ export function ProjectsFilter() {
                   <span className="tag">Chatbot</span>
                   <span className="tag">Natural Language Processing</span>
                   <span className="tag">OCR</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case portfolio-rag-case">
+              <div className="project-media portfolio-rag-media">
+                <video
+                  className="project-demo-video"
+                  src="/portfolio-rag-demo.mp4"
+                  controls
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="Bilingual portfolio RAG assistant demonstration"
+                />
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>05</span>
+                  <span>RAG · Portfolio Assistant</span>
+                </div>
+
+                <h3>Portfolio RAG Assistant</h3>
+
+                <p>
+                  A bilingual Arabic-English RAG assistant that answers
+                  questions about my professional profile using multilingual
+                  embeddings, vector retrieval, and grounded LLM generation.
+                </p>
+
+                <div className="tag-row">
+                  <span className="tag">RAG</span>
+                  <span className="tag">BGE-M3</span>
+                  <span className="tag">Vector Search</span>
+                  <span className="tag">LLMs</span>
                 </div>
               </div>
             </article>

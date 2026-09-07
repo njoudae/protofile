@@ -168,6 +168,30 @@ img { max-width: 100%; height: auto; }
 .project-title-link:hover svg, .project-title-link:focus-visible svg { background: var(--navy); transform: translate(2px, -2px); }
 .project-details > p { margin: 0 0 28px; color: var(--muted); font-size: .8rem; line-height: 1.75; }
 
+.hr-media,
+.portfolio-rag-media {
+  padding: 12px;
+  background: #071324;
+}
+.project-demo-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  background: #071324;
+}
+.yaqadah,
+.smartparking {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.yaqadah img,
+.smartparking img {
+  object-fit: contain;
+}
+
 .musir-logo-media { padding: 34px; background: white; }
 .musir-logo-media img { width: auto; max-width: 75%; max-height: 320px; object-fit: contain; }
 .musir-workflow-media { width: calc(100% - 24px); min-height: 0; align-self: center; justify-self: center; aspect-ratio: 1672 / 939; background: #071324; }
