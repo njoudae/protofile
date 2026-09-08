@@ -5,7 +5,6 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -22,31 +21,10 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
-  const hasRestoredPreference = useRef(false);
 
   useEffect(() => {
-    const savedLanguage = window.localStorage.getItem("portfolio-language");
-    if (savedLanguage === "ar" || savedLanguage === "en") {
-      const restoreLanguage = window.setTimeout(
-        () => {
-          hasRestoredPreference.current = true;
-          setLanguage(savedLanguage);
-        },
-        0
-      );
-
-      return () => window.clearTimeout(restoreLanguage);
-    }
-
-    hasRestoredPreference.current = true;
-  }, []);
-
-  useEffect(() => {
-    if (!hasRestoredPreference.current) return;
-
     document.documentElement.lang = language;
     document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
-    window.localStorage.setItem("portfolio-language", language);
   }, [language]);
 
   const value = useMemo(

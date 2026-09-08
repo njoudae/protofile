@@ -1,5 +1,6 @@
 export const homeCopy = {
   en: {
+    profileName: "Nejood A. Bin Eshaq",
     languageButton: "العربية",
     switchLanguage: "Switch to Arabic",
     sections: ["Qualifications", "Experiences", "Skills", "Achievements", "Projects"],
@@ -44,6 +45,7 @@ export const homeCopy = {
     footer: "AI engineering · business & data analysis · automation · AI research",
   },
   ar: {
+    profileName: "نجود ع. بن إسحاق",
     languageButton: "English",
     switchLanguage: "التبديل إلى الإنجليزية",
     sections: ["المؤهلات", "الخبرات", "المهارات", "الإنجازات", "المشاريع"],

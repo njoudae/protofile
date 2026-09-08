@@ -36,7 +36,7 @@ export default function Home() {
           <Image src="/n-monogram.png" alt="Nejood monogram" width={500} height={500} priority />
         </div>
         <div className="profile-copy">
-          <p className="profile-name">{identity.name}</p>
+          <p className="profile-name">{copy.profileName}</p>
           <h1 id="profile-title"><strong>{copy.headline[0]}</strong> · <strong>{copy.headline[1]}</strong><br /><strong>{copy.headline[2]}</strong> · <strong>{copy.headline[3]}</strong></h1>
           <p>{copy.summary}</p>
           <div className="availability"><span aria-hidden="true" /> {copy.available} <small><MapPin size={14} /> {copy.location}</small></div>
