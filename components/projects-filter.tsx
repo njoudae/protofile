@@ -47,7 +47,110 @@ export function ProjectsFilter() {
 
         {activeCategory === "AI Engineering" && (
           <>
-            <article className="project-case musir-case">
+            <article className="project-case hr-case">
+              <div className="project-media hr-media">
+                <video
+                  className="project-demo-video"
+                  src="/hr-assistant-demo.mp4"
+                  controls
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="HR Assistant project demonstration"
+                />
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>01</span>
+                  <span>{language === "ar" ? "نظام RAG · مساعد محادثة" : "RAG System · Chatbot"}</span>
+                </div>
+
+                <h3>{language === "ar" ? "مساعد الموارد البشرية" : "HR Assistant"}</h3>
+
+                <p>
+                  {copy.hr}
+                </p>
+
+                <div className="tag-row">
+                  <span className="tag">RAG</span>
+                  <span className="tag">Chatbot</span>
+                  <span className="tag">Natural Language Processing</span>
+                  <span className="tag">OCR</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case project-reverse smartparking-case">
+              <div className="project-media smartparking-media">
+                <div className="smartparking">
+                  <Image
+                    src="/smart.gif"
+                    alt="Smart Parking project"
+                    fill
+                    sizes="(max-width: 800px) 100vw, 58vw"
+                    unoptimized
+                  />
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>02</span>
+                  <span>Deep Learning · CNN</span>
+                </div>
+
+                <h3>{language === "ar" ? "المواقف الذكية" : "Smart Parking"}</h3>
+
+                <p>
+                  {copy.smartParking}
+                </p>
+
+                <div className="tag-row">
+                  <span className="tag">Computer Vision</span>
+                  <span className="tag">Image Processing</span>
+                  <span className="tag">Graduate Project</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case portfolio-rag-case">
+              <div className="project-media portfolio-rag-media">
+                <video
+                  className="project-demo-video"
+                  src="/portfolio-rag-demo.mp4"
+                  controls
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  aria-label="Bilingual portfolio RAG assistant demonstration"
+                />
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>03</span>
+                  <span>{language === "ar" ? "RAG · مساعد ملف الأعمال" : "RAG · Portfolio Assistant"}</span>
+                </div>
+
+                <h3>{language === "ar" ? "مساعد ملف الأعمال بتقنية RAG" : "Portfolio RAG Assistant"}</h3>
+
+                <p>
+                  {copy.portfolio}
+                </p>
+
+                <div className="tag-row">
+                  <span className="tag">RAG</span>
+                  <span className="tag">BGE-M3</span>
+                  <span className="tag">Vector Search</span>
+                  <span className="tag">LLMs</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case project-reverse musir-case">
               <div className="project-media musir-workflow-media">
                 <Image
                   src="/musir-workflow.jpg"
@@ -60,7 +163,7 @@ export function ProjectsFilter() {
 
               <div className="project-details">
                 <div className="project-kicker">
-                  <span>01</span>
+                  <span>04</span>
                   <span>{language === "ar" ? "ذكاء اصطناعي · رؤية حاسوبية" : "AI · Computer Vision"}</span>
                 </div>
 
@@ -88,7 +191,7 @@ export function ProjectsFilter() {
               </div>
             </article>
 
-            <article className="project-case project-reverse yaqadha-case">
+            <article className="project-case yaqadha-case">
               <div className="project-media yaqadah-media">
                 <div className="yaqadah">
                   <Image
@@ -103,7 +206,7 @@ export function ProjectsFilter() {
 
               <div className="project-details">
                 <div className="project-kicker">
-                  <span>02</span>
+                  <span>05</span>
                   <span>YOLO · CV</span>
                 </div>
 
@@ -117,109 +220,6 @@ export function ProjectsFilter() {
                   <span className="tag">Computer Vision</span>
                   <span className="tag">Image Analysis</span>
                   <span className="tag">2nd Place</span>
-                </div>
-              </div>
-            </article>
-
-            <article className="project-case smartparking-case">
-              <div className="project-media smartparking-media">
-                <div className="smartparking">
-                  <Image
-                    src="/smart.gif"
-                    alt="Smart Parking project"
-                    fill
-                    sizes="(max-width: 800px) 100vw, 58vw"
-                    unoptimized
-                  />
-                </div>
-              </div>
-
-              <div className="project-details">
-                <div className="project-kicker">
-                  <span>03</span>
-                  <span>Deep Learning · CNN</span>
-                </div>
-
-                <h3>{language === "ar" ? "المواقف الذكية" : "Smart Parking"}</h3>
-
-                <p>
-                  {copy.smartParking}
-                </p>
-
-                <div className="tag-row">
-                  <span className="tag">Computer Vision</span>
-                  <span className="tag">Image Processing</span>
-                  <span className="tag">Graduate Project</span>
-                </div>
-              </div>
-            </article>
-
-            <article className="project-case project-reverse hr-case">
-              <div className="project-media hr-media">
-                <video
-                  className="project-demo-video"
-                  src="/hr-assistant-demo.mp4"
-                  controls
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  aria-label="HR Assistant project demonstration"
-                />
-              </div>
-
-              <div className="project-details">
-                <div className="project-kicker">
-                  <span>04</span>
-                  <span>{language === "ar" ? "نظام RAG · مساعد محادثة" : "RAG System · Chatbot"}</span>
-                </div>
-
-                <h3>{language === "ar" ? "مساعد الموارد البشرية" : "HR Assistant"}</h3>
-
-                <p>
-                  {copy.hr}
-                </p>
-
-                <div className="tag-row">
-                  <span className="tag">RAG</span>
-                  <span className="tag">Chatbot</span>
-                  <span className="tag">Natural Language Processing</span>
-                  <span className="tag">OCR</span>
-                </div>
-              </div>
-            </article>
-
-            <article className="project-case portfolio-rag-case">
-              <div className="project-media portfolio-rag-media">
-                <video
-                  className="project-demo-video"
-                  src="/portfolio-rag-demo.mp4"
-                  controls
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  aria-label="Bilingual portfolio RAG assistant demonstration"
-                />
-              </div>
-
-              <div className="project-details">
-                <div className="project-kicker">
-                  <span>05</span>
-                  <span>{language === "ar" ? "RAG · مساعد ملف الأعمال" : "RAG · Portfolio Assistant"}</span>
-                </div>
-
-                <h3>{language === "ar" ? "مساعد ملف الأعمال بتقنية RAG" : "Portfolio RAG Assistant"}</h3>
-
-                <p>
-                  {copy.portfolio}
-                </p>
-
-                <div className="tag-row">
-                  <span className="tag">RAG</span>
-                  <span className="tag">BGE-M3</span>
-                  <span className="tag">Vector Search</span>
-                  <span className="tag">LLMs</span>
                 </div>
               </div>
             </article>
