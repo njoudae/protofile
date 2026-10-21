@@ -150,7 +150,45 @@ export function ProjectsFilter() {
               </div>
             </article>
 
-            <article className="project-case project-reverse musir-case">
+            <article className="project-case project-reverse daleel-case">
+              <div className="project-media project-screenshot-media">
+                <Image
+                  src="/daleel.png"
+                  alt="Daleel Islamic jurisprudence assistant"
+                  width={1600}
+                  height={911}
+                  sizes="(max-width: 800px) 100vw, 58vw"
+                />
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>04</span>
+                  <span>{language === "ar" ? "RAG · مساعد معرفي فقهي" : "RAG · Fiqh Knowledge Assistant"}</span>
+                </div>
+
+                <h3>
+                  <a
+                    className="project-title-link"
+                    href="https://daleel-lqw1.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {language === "ar" ? "دليل" : "Daleel"} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </h3>
+
+                <p>{copy.daleel}</p>
+
+                <div className="tag-row">
+                  <span className="tag">RAG</span>
+                  <span className="tag">PHP</span>
+                  <span className="tag">Laravel</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-case musir-case">
               <div className="project-media musir-workflow-media">
                 <Image
                   src="/musir-workflow.jpg"
@@ -163,7 +201,7 @@ export function ProjectsFilter() {
 
               <div className="project-details">
                 <div className="project-kicker">
-                  <span>04</span>
+                  <span>05</span>
                   <span>{language === "ar" ? "ذكاء اصطناعي · رؤية حاسوبية" : "AI · Computer Vision"}</span>
                 </div>
 
@@ -191,6 +229,43 @@ export function ProjectsFilter() {
               </div>
             </article>
 
+            <article className="project-case project-reverse haramain-case">
+              <div className="project-media project-screenshot-media">
+                <Image
+                  src="/majalis-al-haramain.png"
+                  alt="Majalis Al-Haramain scholarly lessons platform"
+                  width={1600}
+                  height={910}
+                  sizes="(max-width: 800px) 100vw, 58vw"
+                />
+              </div>
+
+              <div className="project-details">
+                <div className="project-kicker">
+                  <span>06</span>
+                  <span>{language === "ar" ? "ترجمة فورية · منصة ويب" : "Real-time Translation · Web Platform"}</span>
+                </div>
+
+                <h3>
+                  <a
+                    className="project-title-link"
+                    href="https://haramin.bchowy.workers.dev/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {language === "ar" ? "مجالس الحرمين" : "Majalis Al-Haramain"} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </h3>
+
+                <p>{copy.haramain}</p>
+
+                <div className="tag-row">
+                  <span className="tag">Real-time Translation</span>
+                  <span className="tag">Web Development</span>
+                </div>
+              </div>
+            </article>
+
             <article className="project-case yaqadha-case">
               <div className="project-media yaqadah-media">
                 <div className="yaqadah">
@@ -206,7 +281,7 @@ export function ProjectsFilter() {
 
               <div className="project-details">
                 <div className="project-kicker">
-                  <span>05</span>
+                  <span>07</span>
                   <span>YOLO · CV</span>
                 </div>
 

@@ -121,7 +121,7 @@ export default function Home() {
 
             <div className="experience-header">
               <div>
-                <h3>{copy.experience.internshipRole} <span>({copy.experience.internshipLabel})</span></h3>
+                <h3>{copy.experience.internshipRole}</h3>
                 <p className="experience-company">{copy.experience.internshipCompany}</p>
               </div>
               <time>{copy.experience.internshipDate}</time>

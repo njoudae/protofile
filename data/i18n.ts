@@ -30,7 +30,6 @@ export const homeCopy = {
         "Managed solution development from initial business analysis and requirement definition through design and implementation.",
       ],
       internshipRole: "Artificial Intelligence Engineer",
-      internshipLabel: "Internship",
       internshipCompany: "Deanship of Electronic Services, King Khalid University",
       internshipDate: "Sep 2025 – Mar 2026",
       internshipDuties: [
@@ -75,7 +74,6 @@ export const homeCopy = {
         "أدرت تطوير الحلول من تحليل الأعمال وتحديد المتطلبات إلى التصميم والتنفيذ.",
       ],
       internshipRole: "مهندسة ذكاء اصطناعي",
-      internshipLabel: "تدريب",
       internshipCompany: "عمادة الخدمات الإلكترونية، جامعة الملك خالد",
       internshipDate: "سبتمبر 2025 – مارس 2026",
       internshipDuties: [
@@ -133,6 +131,8 @@ export const projectUi = {
     smartParking: "Deep Learning system for analyzing parking space availability and optimizing parking lot utilization using CNN.",
     hr: "A RAG-based HR assistant that retrieves context-grounded answers from Saudi labor regulations and analyzes employment contracts across multiple file formats using OCR and LLMs.",
     portfolio: "A bilingual Arabic-English RAG assistant that answers questions about my professional profile using multilingual embeddings, vector retrieval, and grounded LLM generation.",
+    daleel: "A RAG-powered Islamic jurisprudence assistant that retrieves grounded answers from a trusted fiqh encyclopedia, cites the supporting evidence and sources, and directs personal cases to qualified specialists when needed.",
+    haramain: "A web platform for discovering and registering for scholarly lessons at the Two Holy Mosques, with clear schedules, locations, and real-time translation support for a more accessible learning experience.",
     analyticsTitle: "Analytics Portfolio",
     analytics: "A data analytics portfolio covering data collection, cleaning, transformation, analysis, KPI definition, dashboard development, and decision-ready reporting.",
     automationTitle: "Excel to Dashboard Automation",
@@ -150,6 +150,8 @@ export const projectUi = {
     smartParking: "نظام تعلم عميق يحلل توفر مواقف السيارات ويحسن الاستفادة منها باستخدام الشبكات العصبية الالتفافية CNN.",
     hr: "مساعد موارد بشرية مبني بتقنية RAG يسترجع إجابات موثوقة من أنظمة العمل السعودية ويحلل عقود العمل بصيغ متعددة باستخدام OCR والنماذج اللغوية الكبيرة.",
     portfolio: "مساعد RAG ثنائي اللغة، العربية والإنجليزية، يجيب عن الأسئلة المتعلقة بملفي المهني باستخدام تضمينات متعددة اللغات، والبحث المتجهي، وتوليد إجابات مؤسَّسة على المحتوى.",
+    daleel: "مساعد فقهي مبني بتقنية RAG يسترجع إجابات موثقة من موسوعة فقهية موثوقة، ويعرض الأدلة والمصادر الداعمة، ويوجّه المسائل الشخصية إلى المختصين عند الحاجة.",
+    haramain: "منصة ويب لاستكشاف مجالس العلم في الحرمين الشريفين والتسجيل فيها، مع عرض واضح للمواعيد والمواقع ودعم الترجمة الفورية لتجربة علمية أكثر سهولة ووصولًا.",
     analyticsTitle: "محفظة تحليل البيانات",
     analytics: "محفظة لمشاريع تحليل البيانات تشمل جمع البيانات وتنظيفها وتحويلها وتحليلها، وتعريف مؤشرات الأداء، وتطوير لوحات المعلومات، وإعداد تقارير تدعم اتخاذ القرار.",
     automationTitle: "أتمتة Excel إلى لوحة معلومات",
