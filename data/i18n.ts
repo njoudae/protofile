@@ -33,7 +33,9 @@ export const homeCopy = {
       internshipCompany: "Deanship of Electronic Services, King Khalid University",
       internshipDate: "Sep 2025 – Mar 2026",
       internshipDuties: [
-        "Built and deployed predictive models for solar power forecasting using real-world datasets.",
+        "Built and deployed scalable AI projects serving more than ~60K students.",
+        "Supported digital transformation initiatives, particularly the Scientific Research Performance Indicator, contributing to an increase from 63.75% to 81.67%—a 28.11% relative improvement over previous results.",
+        "Built and deployed predictive models for solar power forecasting using real-world datasets, with a web-based interface and FastAPI backend for model serving.",
         "Designed data pipelines, web scraping systems, and Agentic AI workflows integrating LLMs.",
         "Delivered training programs on research and digital transformation.",
       ],
@@ -77,7 +79,9 @@ export const homeCopy = {
       internshipCompany: "عمادة الخدمات الإلكترونية، جامعة الملك خالد",
       internshipDate: "سبتمبر 2025 – مارس 2026",
       internshipDuties: [
-        "بنيت ونشرت نماذج تنبؤية لتوقع إنتاج الطاقة الشمسية باستخدام بيانات واقعية.",
+        "بنيت ونشرت مشاريع ذكاء اصطناعي قابلة للتوسع تخدم أكثر من 60 ألف طالب.",
+        "دعمت مبادرات التحول الرقمي، ولا سيما مؤشر أداء البحث العلمي، وأسهمت في رفع النتيجة من 63.75% إلى 81.67%، بما يمثل تحسنًا نسبيًا قدره 28.11% مقارنة بالنتائج السابقة.",
+        "بنيت ونشرت نماذج تنبؤية لتوقع إنتاج الطاقة الشمسية باستخدام بيانات واقعية، مع واجهة ويب وواجهة خلفية مبنية باستخدام FastAPI لخدمة النماذج.",
         "صممت خطوط معالجة بيانات وأنظمة لاستخراج بيانات الويب وتدفقات ذكاء اصطناعي وكيلة تدمج النماذج اللغوية الكبيرة.",
         "قدمت برامج تدريبية في البحث والتحول الرقمي.",
       ],
